@@ -395,3 +395,11 @@ cc_test(
         "@boost//:property_tree",
     ],
 )
+
+cc_test(
+    name = "range_transform_test",
+    size = "small",
+    srcs = ["range_transform_test.cc"],
+    deps = ["@boost//:any","@boost//:range"],
+
+)

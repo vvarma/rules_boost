@@ -1032,6 +1032,18 @@ boost_library(
         ":utility",
     ],
 )
+boost_library(
+    name = "cast",
+    hdrs = [
+        "boost/polymorphic_cast.hpp",
+    ],
+    deps = [
+        ":assert",
+        ":config",
+        ":throw_exception",
+        ":numeric_conversion",
+    ],
+)
 
 boost_library(
     name = "range",
@@ -1054,6 +1066,7 @@ boost_library(
         ":tuple",
         ":type_traits",
         ":utility",
+        ":cast",
     ],
 )
 
